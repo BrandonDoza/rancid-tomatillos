@@ -1,4 +1,5 @@
 import MovieCard from "./MovieCard"
+import "./Movies.css"
 
 export default function Movies({movieData}){
     const movieCards = movieData.map(movie => {
@@ -17,8 +18,7 @@ export default function Movies({movieData}){
     console.log(movieData, '<<>>>>>')
 
     return(
-        <div>
-            <h2>movie cards will live here</h2>
+        <div className="movies-display">
             {movieCards} 
         </div>
     )
