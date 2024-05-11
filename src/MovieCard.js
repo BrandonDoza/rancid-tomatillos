@@ -8,7 +8,7 @@ export default function MovieCard({title, posterPath, rating, getMovieDetail, id
                 setSingleMovie(data.movie)})
             }}>
             <h1 className="movie-title">{title}</h1>
-            <img src={posterPath} className="movie-poster"/>
+            <img src={posterPath} alt={title} className="movie-poster"/>
             <h2 className="rating">{rating}</h2>
         </div>
     )
