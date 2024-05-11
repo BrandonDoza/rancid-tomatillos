@@ -1,19 +1,19 @@
 import SingleMovieCard from "./SingleMovieCard";
 
-export default function SingleMovieDisplay({movieData}) {
+export default function SingleMovieDisplay({singleMovieData}) {
     const movie =  (
                 <SingleMovieCard
-                id={movieData.id}
-                key={movieData.id}
-                title={movieData.title}
-                posterPath={movieData.poster_path}
-                backdropPath={movieData.backdrop_path}
-                releaseDate={movieData.release_date}
-                overview={movieData.overview}
-                budget={movieData.budget}
-                revenue={movieData.revenue}
-                runtime={movieData.runtime}
-                tagline={movieData.tagline}
+                id={singleMovieData.id}
+                key={singleMovieData.id}
+                title={singleMovieData.title}
+                posterPath={singleMovieData.poster_path}
+                backdropPath={singleMovieData.backdrop_path}
+                releaseDate={singleMovieData.release_date}
+                overview={singleMovieData.overview}
+                budget={singleMovieData.budget}
+                revenue={singleMovieData.revenue}
+                runtime={singleMovieData.runtime}
+                tagline={singleMovieData.tagline}
                 />
             )
             return (
