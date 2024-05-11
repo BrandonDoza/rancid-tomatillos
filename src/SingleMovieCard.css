@@ -1,0 +1,22 @@
+.movie-detail-card {
+    border: 2px solid black;
+    width: 300px;
+    height: 500px;
+    background-color: aqua;
+    color: white
+}
+
+.movie-poster {
+    width: 200px;
+    height: 250px;
+    border: 2px solid black
+    /* image-rendering: auto; */
+}
+
+.movie-title {
+    font-size: x-large;
+}
+
+.rating {
+    font-size: large;
+}

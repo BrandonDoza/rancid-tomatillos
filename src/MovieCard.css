@@ -1,0 +1,25 @@
+.movie-card {
+    width: 350px;
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.movie-poster {
+    width: 200px;
+    height: 250px;
+    /* image-rendering: auto; */
+}
+
+.movie-title {
+    font-size: x-large;
+}
+
+.rating {
+    font-size: large;
+}
