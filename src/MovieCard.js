@@ -9,7 +9,7 @@ export default function MovieCard({title, posterPath, rating, getMovieDetail, id
             }}>
             <h1 className="movie-title">{title}</h1>
             <img src={posterPath} alt={title} className="movie-poster"/>
-            <h2 className="rating">{rating}</h2>
+            <h2 className="rating">rating: {rating}</h2>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import SingleMovieCard from "./SingleMovieCard";
 
-export default function SingleMovieDisplay({singleMovieData}) {
+export default function SingleMovieDisplay({singleMovieData, setSingleMovie}) {
     const movie =  (
                 <SingleMovieCard
                 id={singleMovieData.id}
@@ -14,6 +14,7 @@ export default function SingleMovieDisplay({singleMovieData}) {
                 revenue={singleMovieData.revenue}
                 runtime={singleMovieData.runtime}
                 tagline={singleMovieData.tagline}
+                setSingleMovie={setSingleMovie}
                 />
             )
             return (
