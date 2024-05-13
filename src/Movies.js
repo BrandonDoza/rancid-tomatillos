@@ -23,3 +23,7 @@ export default function Movies({movieData, getMovieDetail, setSingleMovie}){
         </div>
     )
 }
+
+// Movies.propTypes = {
+//     movieData: PropTypes.arrayOf()
+// }
