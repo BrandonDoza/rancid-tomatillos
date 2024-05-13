@@ -1,5 +1,7 @@
+import { getMovieDetail } from "./ApiCalls"
 import MovieCard from "./MovieCard"
 import "./Movies.css"
+import PropTypes from 'prop-types'
 
 export default function Movies({movieData, getMovieDetail, setSingleMovie}){
     const movieCards = movieData.map(movie => {
@@ -24,6 +26,8 @@ export default function Movies({movieData, getMovieDetail, setSingleMovie}){
     )
 }
 
-// Movies.propTypes = {
-//     movieData: PropTypes.arrayOf()
-// }
+Movies.propTypes = {
+    movieData: PropTypes.array,
+    getMovieDetail: PropTypes.func,
+    setSingleMovie: PropTypes.func
+}
