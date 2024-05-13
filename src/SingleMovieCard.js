@@ -1,4 +1,5 @@
 import "./SingleMovieCard.css";
+import PropTypes from 'prop-types';
 
 export default function SingleMovieCard({
   title,
@@ -32,4 +33,17 @@ export default function SingleMovieCard({
       </button>
     </div>
   );
+}
+
+SingleMovieCard.propTypes = {
+    title: PropTypes.string,
+  posterPath: PropTypes.string,
+  backdropPath: PropTypes.string,
+  releaseDate: PropTypes.string,
+  overview: PropTypes.string,
+  budget: PropTypes.string,
+  revenue: PropTypes.number,
+  runtime: PropTypes.number,
+  tagline: PropTypes.string,
+  setSingleMovie: PropTypes.func,
 }
