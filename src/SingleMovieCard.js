@@ -36,7 +36,7 @@ export default function SingleMovieCard({
 }
 
 SingleMovieCard.propTypes = {
-    title: PropTypes.string,
+  title: PropTypes.string,
   posterPath: PropTypes.string,
   backdropPath: PropTypes.string,
   releaseDate: PropTypes.string,
