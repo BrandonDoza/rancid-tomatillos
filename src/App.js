@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="App">
       <Header className="header"/> 
-      {singleMovie ? <SingleMovieDisplay singleMovieData={singleMovie}/> : <Movies className="movies-display" movieData={movies} getMovieDetail={getMovieDetail} setSingleMovie={setSingleMovie}/>}
+      {singleMovie ? <SingleMovieDisplay singleMovieData={singleMovie} setSingleMovie={setSingleMovie}/> : <Movies className="movies-display" movieData={movies} getMovieDetail={getMovieDetail} setSingleMovie={setSingleMovie}/>}
     </div>
   );
 }
