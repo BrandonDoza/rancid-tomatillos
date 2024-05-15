@@ -2,31 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 import Header from "./Header"
 import Movies from "./Movies"
-import SingleMovieDisplay from './SingleMovieDisplay';
+import {SingleMovieDisplay} from './SingleMovieCard'
 import { useEffect, useState } from 'react';
 import { getAllMovieData, getMovieDetail } from './ApiCalls'   
+
 
 function App() {
 
   const [movies, setMovies] = useState([])
   const [singleMovie, setSingleMovie] = useState(null)
 
-  // function getAllMovieData(){
-  //   fetch('https://rancid-tomatillos.herokuapp.com/api/v2/movies')
-  //   .then(response => response.json())
-  //   .then(data => setMovies(data.movies))
-  //   .catch(error => alert(`${error} please try again later`))
-  // }
-
-  // function getMovieDetail(id) {
-  //   fetch(`https://rancid-tomatillos.herokuapp.com/api/v2/movies/${id}`)
-  //   .then(response => response.json())
-  //   .then(data => setSingleMovie(data.movie))
-  //   .catch(error => alert(`${error} sorry try again later`))
-  // }
-
-  console.log("movies", movies)
-  console.log(singleMovie, "single")
 
   useEffect(()=> {
     getAllMovieData()
