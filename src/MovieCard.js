@@ -1,20 +1,12 @@
 import "./MovieCard.css"
 import PropTypes from 'prop-types'
 
-export default function MovieCard({title, posterPath, rating, getMovieDetail, id, setSingleMovie}){
+export default function MovieCard({title, posterPath, rating, id}){
     return(
-        <div className="movie-card" id={id} onClick={(e) => {
-            getMovieDetail(e.target.id)
-            .then((data) => {
-                setSingleMovie(data.movie)})
-            }}>
+        <div className="movie-card">
             <h1 className="movie-title">{title}</h1>
             <img src={posterPath} alt={title} className="movie-poster" 
-            id={id} onClick={(e) => {
-                getMovieDetail(e.target.id)
-                .then((data) => {
-                    setSingleMovie(data.movie)})
-                }}/>
+            id={id}/>
             <h2 className="rating">rating: {rating}</h2>
         </div>
     )
