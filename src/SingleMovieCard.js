@@ -1,6 +1,29 @@
 import "./SingleMovieCard.css";
 import PropTypes from 'prop-types';
 
+export function SingleMovieDisplay({singleMovieData, setSingleMovie}) {
+  const movie =  (
+              <SingleMovieCard
+              id={singleMovieData.id}
+              key={singleMovieData.id}
+              title={singleMovieData.title}
+              posterPath={singleMovieData.poster_path}
+              backdropPath={singleMovieData.backdrop_path}
+              releaseDate={singleMovieData.release_date}
+              overview={singleMovieData.overview}
+              budget={singleMovieData.budget}
+              revenue={singleMovieData.revenue}
+              runtime={singleMovieData.runtime}
+              tagline={singleMovieData.tagline}
+              setSingleMovie={setSingleMovie}
+              />
+          )
+          return (
+              <div>{movie}</div>
+          )
+}
+
+
 export default function SingleMovieCard({
   title,
   posterPath,
@@ -34,6 +57,8 @@ export default function SingleMovieCard({
     </div>
   );
 }
+
+
 
 SingleMovieCard.propTypes = {
   title: PropTypes.string,
