@@ -4,3 +4,41 @@
  gap: 15px;
  justify-items: center;
 }
+
+@media screen and (max-width: 112.5em) {
+    .movies-display {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 94em) {
+    .movies-display{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 70em) {
+    .movies-display{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (max-width: 60em) {
+    .movies-display{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 50em) {
+    .movies-display{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 27em) {
+    .movies-display{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+

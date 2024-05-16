@@ -1,20 +1,19 @@
 .movie-card {
-    width: 350px;
-    height: 450px;
+    width: 22em;
+    height: 28em;
     border: 2px solid black;
-    border-radius: 8px;
+    border-radius: .5em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 20px;
+    margin-top: 1.25em;
     background-color: aliceblue;
 }
 
 .movie-poster {
-    width: 200px;
-    height: 250px;
-    /* image-rendering: auto; */
+    width: 12.5em;
+    height: 15.5em;
 }
 
 .movie-title {
@@ -23,4 +22,32 @@
 
 .rating {
     font-size: large;
+}
+
+@media screen and (max-width: 70em) {
+    .movie-card {
+        width: 11em;
+        height: 14em;
+        border: 2px solid black;
+        border-radius: .5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 1.25em;
+        background-color: aliceblue;
+    }
+    
+    .movie-poster {
+        width: 6.25em;
+        height: 7.75em;
+    }
+    
+    .movie-title {
+        font-size: small;
+    }
+    
+    .rating {
+        font-size: x-small;
+    }
 }
