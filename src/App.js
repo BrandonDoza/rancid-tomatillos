@@ -1,36 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from "./Header"
-import Movies from "./Movies"
-import {SingleMovieDisplay} from './SingleMovieCard'
-import { useEffect, useState } from 'react';
-import { getAllMovieData, getMovieDetail } from './ApiCalls'   
-
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./Header";
+import Movies from "./Movies";
+import SingleMovieCard from "./SingleMovieCard";
+import { useEffect, useState } from "react";
+import { getAllMovieData, getMovieDetail } from "./ApiCalls";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
-
-  const [movies, setMovies] = useState([])
-  const [singleMovie, setSingleMovie] = useState(null)
-
-
-  useEffect(()=> {
+  const [movies, setMovies] = useState([]);
+  const [singleMovie, setSingleMovie] = useState(null);
+  useEffect(() => {
     getAllMovieData()
-    .then(data => setMovies(data.movies))
-    .catch(error => alert(`${error} please try again later`))
-  }, [])
-
-  
+      .then((data) => setMovies(data.movies))
+      .catch((error) => alert(`${error} please try again later`));
+  }, []);
 
   return (
     <div className="App">
-      <Header className="header"/> 
-      {singleMovie ? <SingleMovieDisplay singleMovieData={singleMovie} setSingleMovie={setSingleMovie}/> : <Movies className="movies-display" movieData={movies} getMovieDetail={getMovieDetail} setSingleMovie={setSingleMovie}/>}
+      <Header className="header" />
+      <Routes>
+        <Route path="/" element={<Movies movieData={movies} />} />
+        <Route path="/:id" element={<SingleMovieCard />} />
+      </Routes>
     </div>
   );
 }
 
 export default App;
-
 
 // psuedocode for single movie
 // need to use event.target.id to fetch the single movie
@@ -40,4 +37,3 @@ export default App;
 // const [movie, setMovie] = useState([])????
 // function showSingleMovie() {setMovie() }????
 // setSingleMovie back to [] when a user clicks the back button
-
