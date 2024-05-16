@@ -1,5 +1,4 @@
 .movie-detail-card {
-    border: 2px solid black;
     width: 100%;
     height: 100%;
     background-color: #848c8e;
@@ -12,8 +11,8 @@
 }
 
 .single-movie-poster {
-    width: 350px;
-    height: 450px;
+    width: 15em;
+    height: 20em;
     border: 2px solid #f5b700;
     border-radius: 5px;
 }
@@ -55,3 +54,47 @@
     margin-right: 100px;
     margin-left: 100px;
 }
+
+.tagline {
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .image-container {
+        width: 15em;
+        height: 20em;
+    }
+
+    .single-movie-poster {
+        width: 9em;
+        height: 12em;
+    }
+
+    .button {
+        width: 6em;
+        height: 4em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .image-container {
+        width: 40em;
+        height: 40em;
+    }
+
+    .single-movie-poster {
+        width: 25em;
+        height: 30em;
+    }
+
+    .button {
+        width: 12em;
+        height: 5em;
+    }
+
+    .tagline, .release-date, .overview, .budget, .revenue, .runtime {
+        font-size: x-large;
+    }
+}
+
+
