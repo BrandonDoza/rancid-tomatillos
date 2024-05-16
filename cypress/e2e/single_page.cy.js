@@ -13,6 +13,9 @@ describe('single movie page', () => {
   });
   it('should display information for single movie when clicked', () => {
     cy.get('.movies-display > :nth-child(1)').click()
-    
+    cy.get('.single-movie-title').contains('Black Adam')
+    cy.get('.button').contains('View All Movies')
+    cy.get('button').click()
+    cy.url().should('eq', 'http://localhost:3000/')
   })
 })
