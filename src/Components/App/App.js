@@ -1,10 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Header from "./Header";
-import Movies from "./Movies";
-import SingleMovieCard from "./SingleMovieCard";
+import Header from "../Header/Header";
+import Movies from "../Movies/Movies";
+import Error from "../Error/Error"
+import SingleMovieCard from "../SingleMovieCard/SingleMovieCard";
 import { useEffect, useState } from "react";
-import { getAllMovieData, getMovieDetail } from "./ApiCalls";
+import { getAllMovieData, getMovieDetail } from "../../ApiCalls";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Movies movieData={movies} />} />
         <Route path="/:id" element={<SingleMovieCard />} />
+        <Route path="*" element={<Error />}/>
       </Routes>
     </div>
   );

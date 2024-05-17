@@ -1,4 +1,4 @@
-import MovieCard from "./MovieCard";
+import MovieCard from "../MovieCard/MovieCard";
 import "./Movies.css";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";

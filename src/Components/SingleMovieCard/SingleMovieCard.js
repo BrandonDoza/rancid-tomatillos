@@ -1,6 +1,6 @@
 import "./SingleMovieCard.css";
 import { useParams, useNavigate } from "react-router-dom";
-import { getMovieDetail } from "./ApiCalls";
+import { getMovieDetail } from "../../ApiCalls";
 import { useState, useEffect } from "react";
 
 export default function SingleMovieCard() {
