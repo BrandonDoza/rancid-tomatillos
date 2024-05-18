@@ -1,0 +1,11 @@
+.error {
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    font-size: larger;
+    color: white
+}
+
+.links {
+    color: inherit;
+}

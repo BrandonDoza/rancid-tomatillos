@@ -1,6 +1,6 @@
 import "./SingleMovieCard.css";
-import { useParams, useNavigate } from "react-router-dom";
-import { getMovieDetail } from "./ApiCalls";
+import { useParams, useNavigate, Link } from "react-router-dom";
+import { getMovieDetail } from "../../ApiCalls";
 import { useState, useEffect } from "react";
 
 export default function SingleMovieCard() {
@@ -26,9 +26,9 @@ export default function SingleMovieCard() {
       <p className="budget">budget: ${singleMovie.budget}</p>
       <p className="revenue">revenue: ${singleMovie.revenue}</p>
       <p className="runtime">runtime: {singleMovie.runtime} minutes</p>
-      <button onClick={() => navigate(-1)} className="button">
-        View All Movies
-      </button>
+      <Link to="/">
+      <button className="button">View All Movies</button>
+      </Link>
     </div>
   );
 }

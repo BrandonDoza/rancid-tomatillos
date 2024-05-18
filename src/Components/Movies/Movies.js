@@ -1,4 +1,4 @@
-import MovieCard from "./MovieCard";
+import MovieCard from "../MovieCard/MovieCard";
 import "./Movies.css";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Movies({ movieData }) {
   const movieCards = movieData.map((movie) => {
     return (
-      <Link to={`/${movie.id}`} key={movie.id}>
+      <Link to={`/movies/${movie.id}`} key={movie.id} className="links">
         <MovieCard
           id={movie.id}
           title={movie.title}

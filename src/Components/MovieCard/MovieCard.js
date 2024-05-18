@@ -21,4 +21,3 @@ MovieCard.propTypes = {
     setSingleMovie: PropTypes.func
 }
 
-//Co-authored-by: Laurelbonal@gmail.com
