@@ -27,7 +27,7 @@ This project utilized RESTful architecture, and Responsive Layout design. These 
 
 ### Instructions
 * (SSH) git clone git@github.com:BrandonDoza/rancid-tomatillos.git
-* (HTTPS) 
+* (HTTPS) git clone https://github.com/BrandonDoza/rancid-tomatillos.git
 * cd rancid-tomatillos
 * npm install
 * npm start
@@ -35,20 +35,17 @@ This project utilized RESTful architecture, and Responsive Layout design. These 
 
 ### Tests
 We tested this application using Cypress E2E testing for the first time. 
-####To view tests:
+To view tests:
 * npm run cypress open
 
-## 📚 Context
-
-
 ## 🏆 Wins
--This project was our first project using React.
--We had daily stand-ups in our group, which allowed us to complete the project while learning new material.
--Although the material and technologies used were new to us, this project deepened our understanding of those technologies and increased our confidence in using them. 
+* This project was our first project using React.
+* We had daily stand-ups in our group, which allowed us to complete the project while learning new material.
+* Although the material and technologies used were new to us, this project deepened our understanding of those technologies and increased our confidence in using them. 
 
 ## 🚧 Challenges
--When first using React Router, refactoring from conditional rendering to Router was a little confusing (but we figured it out).
--Creating the responsive layout for the first time was a lot of trial and error.
+* When first using React Router, refactoring from conditional rendering to Router was a little confusing (but we figured it out).
+* Creating the responsive layout for the first time was a lot of trial and error.
 
 ## 🤝 Credits
 
