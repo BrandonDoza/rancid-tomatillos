@@ -10,7 +10,6 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [movies, setMovies] = useState([]);
-  const [singleMovie, setSingleMovie] = useState(null);
   useEffect(() => {
     getAllMovieData()
       .then((data) => setMovies(data.movies))
