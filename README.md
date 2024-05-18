@@ -12,6 +12,9 @@
 ## 🌟 Overview
 This project used React (and other technologies listed above) to create a web application that allows users to view a list of popular movies. They can see an overview of all moives at once, and click on any of the individual movie cards to view more detailed information about that particular movie. 
 
+## ✨ Features
+This project utilized RESTful architecture, and Responsive Layout design. These were implemented for the best possible user experience. 
+
 
 ## 🔗 Live Demo
 
@@ -19,15 +22,21 @@ This project used React (and other technologies listed above) to create a web ap
 ## ⚙️ Installation & Setup
 
 ### Requirements
-
+* Node.js and npm installed on your local machine
+* Git installed on your local machine
 
 ### Instructions
-
+* (SSH) git clone git@github.com:BrandonDoza/rancid-tomatillos.git
+* (HTTPS) 
+* cd rancid-tomatillos
+* npm install
+* npm start
+* Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Tests
-We tested this application using Cypress E2E testing for the first time. use command 
-`npm run cypress open`
-to see our tests!! 
+We tested this application using Cypress E2E testing for the first time. 
+####To view tests:
+* npm run cypress open
 
 ## 📚 Context
 
