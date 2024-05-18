@@ -1,16 +1,18 @@
 import "./SingleMovieCard.css";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, Navigate, Link } from "react-router-dom";
 import { getMovieDetail } from "../../ApiCalls";
 import { useState, useEffect } from "react";
 
 export default function SingleMovieCard() {
   const [singleMovie, setSingleMovie] = useState({})
   let movieId = useParams().id
-  const navigate = useNavigate()
   useEffect(() => {
     getMovieDetail(movieId)
   .then(data => setSingleMovie(data.movie))
   }, [])
+  if (!singleMovie) {
+    return <Navigate to="/*" />;
+  }
   return (
     <div className="movie-detail-card">
       <h1 className="single-movie-title">{singleMovie.title}</h1>
