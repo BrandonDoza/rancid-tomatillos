@@ -10,9 +10,7 @@
 
 
 ## 🌟 Overview
-
-
-## ✨ Features
+This project used React (and other technologies listed above) to create a web application that allows users to view a list of popular movies. They can see an overview of all moives at once, and click on any of the individual movie cards to view more detailed information about that particular movie. 
 
 
 ## 🔗 Live Demo
