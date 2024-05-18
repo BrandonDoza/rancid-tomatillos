@@ -15,10 +15,6 @@ This project used React (and other technologies listed above) to create a web ap
 ## ✨ Features
 This project utilized RESTful architecture, and Responsive Layout design. These were implemented for the best possible user experience. 
 
-
-## 🔗 Live Demo
-
-
 ## ⚙️ Installation & Setup
 
 ### Requirements
