@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Movies({ movieData }) {
   const movieCards = movieData.map((movie) => {
     return (
-      <Link to={`/${movie.id}`} key={movie.id}>
+      <Link to={`/movies/${movie.id}`} key={movie.id} className="links">
         <MovieCard
           id={movie.id}
           title={movie.title}

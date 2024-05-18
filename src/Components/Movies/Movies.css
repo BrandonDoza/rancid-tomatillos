@@ -6,6 +6,11 @@
  justify-items: center;
 }
 
+.links {
+    text-decoration: none; 
+    color: inherit;
+}
+
 @media screen and (max-width: 112.5em) {
     .movies-display {
         grid-template-columns: repeat(4, 1fr);
